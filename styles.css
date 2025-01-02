@@ -1,0 +1,523 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c5c1c1;
+    color: #d4af37; /* Dorado */
+    line-height: 1.6;
+  }
+
+  body {
+    background-image: url('./img/subaru-impreza-gold-painted-rims-h0c2yp630texfnqx.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen de fondo se quede fija al hacer scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+  
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: #000; /* Fondo negro */
+  border-bottom: 1px solid #d4af37; /* Línea dorada sutil */
+  flex-wrap: wrap; /* Permite que se adapte si es necesario */
+}
+
+.navbar a {
+  color: #d4af37; /* Dorado elegante */
+  text-decoration: none;
+  font-size: 1.2rem; /* Tamaño más llamativo */
+  padding: 10px 15px; /* Espaciado interno */
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.navbar a:hover {
+  color: #000;
+  background-color: #d4af37; /* Efecto de inversión */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    padding: 8px 10px; /* Reduce espaciado interno */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column; /* Opciones en columna para pantallas pequeñas */
+    align-items: flex-start; /* Alinear a la izquierda */
+    padding: 15px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem; /* Reducir fuente */
+    margin-bottom: 5px; /* Separación entre enlaces */
+  }
+}
+
+
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    color: #d4af37;
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Serviço Section */
+  .servico {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    color: #ccc; /* Gris */
+    margin: 20px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .servico h2 {
+    color: #d4af37;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .preco {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .cta {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: center;
+  }
+  
+  /* Trabalhos Section */
+  .trabalhos {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .trabalhos h2 {
+    color: #d4af37;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .galeria img {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: 250px; /* AQUÍ AJUSTAS LA ALTURA DE LAS IMÁGENES */
+    object-fit: cover; /* Mantiene las proporciones y recorta si es necesario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    transition: transform 0.3s; /* Animación al hacer hover */
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta automáticamente el tamaño de las columnas */
+    gap: 20px; /* Espaciado entre las imágenes */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer and WhatsApp Button */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  #whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  #whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  #whatsapp-button:hover {
+    background-color: #1da851;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #111;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    color: #fff;
+  }
+  
+  h1, h2 {
+    color: #ffcc00;
+  }
+  
+  .trabalhos {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ffcc00;
+  }
+  
+  .item p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffcc00;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+  }
+  
+  #whatsapp-button {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    gap: 10px;
+  }
+  
+  #whatsapp-button img {
+    width: 24px;
+    height: 24px;
+  }
+
+/* Logo en el Navbar */
+.navbar .logo {
+    width: 150px; /* Aumenta el tamaño del logo a 150px o ajusta como desees */
+    height: auto;
+    margin-right: 20px; /* Espacio entre el logo y los enlaces */
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 20px; /* Ajusta el padding para un mejor espaciado */
+    border-bottom: 2px solid #d4af37;
+  }
+  
+  .navbar a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    margin-left: 20px; /* Espacio entre los enlaces */
+  }
+  
+  .navbar a:hover {
+    color: #fff;
+  }
+    
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .galeria {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .galeria img {
+      height: 250px; /* Aumento el tamaño de las imágenes */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galeria {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+  
+    .galeria img {
+      height: 300px; /* Aumento más el tamaño de las imágenes */
+    }
+  }
+  
+  /* Sección de Productos */
+.produtos {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro transparente */
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+}
+
+.produtos h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #d4af37; /* Dorado */
+  margin-bottom: 20px;
+}
+
+/* Galería de Imágenes */
+.produtos .galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px; /* Espaciado entre las imágenes */
+  padding: 20px;
+}
+
+.produtos .galeria .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a; /* Fondo para cada item */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.produtos .galeria .item img {
+  width: 100%;
+  height: 200px; /* Ajusta el alto de las imágenes */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+  border-bottom: 2px solid #d4af37; /* Línea dorada debajo de la imagen */
+  transition: transform 0.3s;
+}
+
+.produtos .galeria .item img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.produtos .galeria .item p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #ffcc00; /* Texto dorado */
+  text-align: center;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+  .produtos .galeria {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .produtos .galeria {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna para pantallas pequeñas */
+  }
+}
+
+.processo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+.processo-item {
+  text-align: center;
+}
+
+.processo-item img {
+  width: 100%;
+  height: 250px; /* Define la altura fija */
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.processo-item img:hover {
+  transform: scale(1.05);
+}
+
+.processo-item h3 {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #ffcc00; /* Cambia este color si prefieres otro */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Efecto de sombra */
+}
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.servicos-profissionais-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Layout flexible */
+  gap: 1.5rem; /* Separación entre elementos */
+  margin: 2rem 0;
+}
+
+.imagem-container {
+  text-align: center; /* Centrar títulos bajo las imágenes */
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.imagem-container img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el contenedor */
+  height: auto; /* Mantiene proporciones */
+  display: block;
+}
+
+.imagem-container h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #333; /* Texto oscuro */
+}
+
+/* Estilo para la sección "texto-final" */
+.texto-final {
+  padding: 40px; /* Espaciado alrededor del contenido */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y semitransparente */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  text-align: center; /* Centrado del texto */
+  max-width: 900px; /* Ancho máximo para el texto */
+  margin: 40px auto; /* Centrado horizontal */
+}
+
+/* Estilo para el título h2 */
+.texto-final h2 {
+  font-size: 2rem; /* Tamaño del título */
+  color: #fff; /* Texto blanco */
+  font-family: 'Arial', sans-serif; /* Fuente legible */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+  text-transform: uppercase; /* Título en mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Estilo para el texto en párrafo */
+.texto-final p {
+  font-size: 1.1rem; /* Tamaño de fuente para el texto */
+  color: #fff; /* Color blanco por defecto */
+  line-height: 1.6; /* Espaciado entre líneas */
+  font-family: 'Arial', sans-serif; /* Fuente clara y legible */
+  padding: 10px 20px; /* Espaciado dentro del párrafo */
+  border: 2px solid #d4af37; /* Borde dorado alrededor */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro y ligeramente transparente */
+  margin-top: 20px; /* Espaciado arriba */
+  transition: all 0.3s ease; /* Transición suave al interactuar */
+  animation: colorChange 3s infinite alternate; /* Animación para el cambio de color */
+}
+
+/* Efecto al pasar el mouse sobre el párrafo */
+.texto-final p:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Efecto de cambio de fondo */
+  color: #d4af37; /* Cambio de color de texto a dorado */
+  border-color: #ffcc00; /* Cambio de borde a color más brillante */
+}
+
+/* Animación para el cambio de color del texto */
+@keyframes colorChange {
+  0% {
+    color: #fff; /* Color blanco al inicio */
+  }
+  100% {
+    color: #d4af37; /* Color dorado al final */
+  }
+}
