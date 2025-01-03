@@ -7,28 +7,28 @@ body {
     line-height: 1.6;
   }
 
-/* Estilo general para todas las pantallas */
+
 body {
-  background-image: url('./img/ferrari.f.jpg'); /* o .webp, dependiendo de lo que hayas hecho */
+  background-image: url('./img/ferrari.f.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 100vh; /* Asegura que el fondo cubra toda la ventana */
+  height: 100vh; 
   margin: 0;
 }
 
-/* Para pantallas grandes (más de 1024px, por ejemplo, escritorio) */
+
 @media (min-width: 1024px) {
   body {
-      background-image: url('./img/ferrari.f.jpg');  /* Imagen optimizada para escritorio */
+      background-image: url('./img/ferrari.f.jpg');  
   }
 }
 
-/* Para dispositivos móviles (menos de 1024px) */
+
 @media (max-width: 1023px) {
   body {
-      background-image: url('./img/ferrari.f.jpg'); /* Imagen optimizada para móviles */
+      background-image: url('./img/ferrari.f.jpg');
   }
 }
 
