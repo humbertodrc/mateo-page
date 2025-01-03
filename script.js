@@ -1,9 +1,7 @@
-/* // script.js
-const hamburger = document.getElementById("hamburger");
-const navbar = document.querySelector(".navbar");
+function toggleMenu() {
+  const menu = document.querySelector('.nav-links');
+  const hamburger = document.querySelector('.hamburger');
 
-hamburger.addEventListener("click", () => {
-  navbar.classList.toggle("open"); // Abre o cierra el menú al hacer clic
-});
-
-  */
+  menu.classList.toggle('active'); // Activa o desactiva el menú
+  hamburger.classList.toggle('active'); // Cambia el color del icono cuando se hace clic
+}
