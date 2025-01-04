@@ -11,6 +11,7 @@ body {
 	background-color: #c5c1c1;
 	color: #d4af37;
 	line-height: 1.6;
+  position: relative;
 }
 
 body::before {
